@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de força peso em diferentes planetas do sitema solar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1 class="body__titulo">Saiba quanto você pesa em diferentes planetas <br>com <b>JavaScript!</b></h1>
+
+        <article class="body__box">
+            <h3 class="box__titulo">Selecione para quais planetas deseja calcular:</h3>
+            <div class="box__planetas">
+                <input type="checkbox" id="planetas__checkbox1" class="checkbox__input" data-gravity="0.37" data-planet-Name="Mercúrio">
+                <label for="planetas__checkbox1" class="planetas__checkbox1">
+                    <img class="box__icons" src="./assets/mycollection/png/008-mercurio.png" alt="PLaneta Mercúrio">
+                    <p>Mercúrio</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox2" class="checkbox__input" data-gravity="0.88" data-planet-Name="Vênus">
+                <label for="planetas__checkbox2" class="planetas__checkbox2">
+                    <img class="box__icons" src="./assets/mycollection/png/004-venus.png" alt="PLaneta Vênus">
+                    <p>Vênus</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox3" class="checkbox__input" data-gravity="1" data-planet-Name="Terra">
+                <label for="planetas__checkbox3" class="planetas__checkbox3">
+                    <img class="box__icons" src="./assets/mycollection/png/001-terra.png" alt="PLaneta Terra">
+                    <p>Terra</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox4" class="checkbox__input" data-gravity="0.38" data-planet-Name="Marte">
+                <label for="planetas__checkbox4" class="planetas__checkbox4">
+                    <img class="box__icons" src="./assets/mycollection/png/006-marte.png" alt="PLaneta Marte">
+                    <p>Marte</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox5" class="checkbox__input" data-gravity="2.64" data-planet-Name="Júpiter">
+                <label for="planetas__checkbox5" class="planetas__checkbox5">
+                    <img class="box__icons" src="./assets/mycollection/png/005-jupiter.png" alt="PLaneta Júpiter">
+                    <p>Júpiter</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox6" class="checkbox__input" data-gravity="1.15" data-planet-Name="Saturno">
+                <label for="planetas__checkbox6" class="planetas__checkbox6">
+                    <img class="box__icons" src="./assets/mycollection/png/002-saturno.png" alt="PLaneta Saturno">
+                    <p>Saturno</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox7" class="checkbox__input" data-gravity="1.17" data-planet-Name="Urano">
+                <label for="planetas__checkbox7" class="planetas__checkbox7">
+                    <img class="box__icons" src="./assets/mycollection/png/003-urano.png" alt="PLaneta Urano">
+                    <p>Urano</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox8" class="checkbox__input" data-gravity="1.18" data-planet-Name="Netuno">
+                <label for="planetas__checkbox8" class="planetas__checkbox8">
+                    <img class="box__icons" src="./assets/mycollection/png/009-netuno.png" alt="PLaneta Netuno">
+                    <p>Netuno</p>
+                </label>
+                <input type="checkbox" id="planetas__checkbox9" class="checkbox__input" data-gravity="0.06" data-planet-Name="Plutão">
+                <label for="planetas__checkbox9" class="planetas__checkbox9">
+                    <img class="box__icons" src="./assets/mycollection/png/007-plutao.png" alt="PLaneta Plutão">
+                    <p>Plutão</p>
+                </label>
+            </div>
+            <input type="number" min="5" max="800" required placeholder="Digite seu peso em Kg. EX: 85.2" class="input__nome">
+            <input type="button" value="Calcular" class="submitButton">
+        </article>
+
+        <article class="body__resul-box resul-box__hidden">
+            <h3 class="resul-box__titulo">Aqui estão os resultados!</h3>
+            <ul class="resul-box__lista"></ul>
+        </article>
+        
+        <footer class="body__rodape">
+            <h3>Créditos quanto a arte dos ícones</h3>
+            <div>
+                Ícones feitos por 
+                <a href="https://www.flaticon.com/br/autores/monkik" title="monkik">monkik</a> 
+                from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+            </div>
+            <div>
+                Ícones feitos por 
+                <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware">Good Ware</a>
+                from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+            </div>
+                <div>
+                    Ícones feitos por 
+                    <a href="https://www.flaticon.com/br/autores/tulpahn" title="tulpahn">tulpahn</a>
+                    from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            <div>
+                Ícones feitos por 
+                <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                from <a href="https://www.flaticon.com/br/" title="Flaticon">
+                www.flaticon.com</a>
+            </div>
+            <div>
+                Ícones feitos por 
+                <a href="https://www.flaticon.com/br/autores/hamstring" title="Hamstring">Hamstring</a>
+                from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </footer>
+
+        <script src="./js/main.js" type="module"></script>
+        <script src="./js/freshCard.js" type="module"></script>
+    </body>
+</html>

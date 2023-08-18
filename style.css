@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/2008069-3d-starry-night-sky-background-gratis-foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body__titulo {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 40px;
+    color: white;
+}
+
+.body__titulo b {
+    color: rgb(241, 238, 30);
+}
+
+.body__box, .body__resul-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    margin: 30px auto 30px auto;
+    border-radius: 25px;
+    background-color: white;
+    padding: 25px;
+}
+
+.body__box-animation {
+    animation: fleshCardAnimation 1s ease-in-out forwards;
+}
+
+.box__titulo, .resul-box__titulo {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.box__planetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+#planetas__checkbox1:checked ~ .planetas__checkbox1 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox2:checked ~ .planetas__checkbox2 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox3:checked ~ .planetas__checkbox3 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox4:checked ~ .planetas__checkbox4 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox5:checked ~ .planetas__checkbox5 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox6:checked ~ .planetas__checkbox6 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox7:checked ~ .planetas__checkbox7 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox8:checked ~ .planetas__checkbox8 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+#planetas__checkbox9:checked ~ .planetas__checkbox9 {
+    border: 2px solid rgb(241, 238, 30);
+}
+
+.box__planetas label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+input[type="number"] {
+    border-radius: 15px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    width: 50%;
+    padding: 20px;
+}
+
+input[type="number"]::placeholder {
+    font-size: 1rem;
+}
+
+input[type="button"] {
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: rgb(63, 160, 63);
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    transition: 500ms;
+    color: #000;
+}
+
+input[type="button"]:active {
+    color: white;
+    background-color: rgb(63, 160, 63);
+}
+
+.body__rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,1));
+    margin-top: 20px;
+}
+
+.body__rodape h3 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.body__rodape a {
+    color: rgb(241, 238, 30);
+    text-decoration: none;
+}
+
+.resul-box__hidden {
+    display: none;
+}
+
+@keyframes fleshCardAnimation {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(25px);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+        display: none;
+    }
+}
